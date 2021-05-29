@@ -36,3 +36,23 @@ if (dias <= 7) {
 } else if (dias > 7) {
   document.write(getAnios(contAnios) + ' año(s) , ' + getWeek(contSemana) + ' semana(s) y ' + getDay(restDay) + ' dia(s)');
 }
+
+
+//otra forma
+
+// let cantidadDeDias;
+// do {
+//   cantidadDeDias = +prompt("Ingrese la cantidad de días", "373");
+// } while (cantidadDeDias < 0);
+// // scope
+// var cantidadDeAños = Math.floor(cantidadDeDias / 365);
+// console.log("Cantidad de años: " + cantidadDeAños);
+
+// var cantidadDeSemanas = Math.floor((cantidadDeDias % 365) / 7);
+// console.log("Cantidad de semanas: " + cantidadDeSemanas);
+
+// // var cantidadDeDiasRestantes = Math.floor(
+// //   cantidadDeDias - cantidadDeAños * 365 - cantidadDeSemanas * 7
+// // );
+// var cantidadDeDiasRestantes = Math.floor((cantidadDeDias % 365) % 7);
+// console.log("Cantidad de días restantes: " + cantidadDeDiasRestantes);
